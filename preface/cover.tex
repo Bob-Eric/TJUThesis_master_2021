@@ -22,10 +22,10 @@
 % \ckeywords{关键词~1；关键词~2；关键词~3；……；关键词~7（关键词总共~3~—~7~个，最后一个关键词后面没有标点符号）}
 
 % \eabstract{
-% The upper bound of the number of Chinese characters is 400. The abstract aims at introducing the research purpose, research methods, research results, and research conclusion of graduation thesis, with refining words. Generally speaking, both the Chinese and English abstracts require the keywords, the number of which varies from 3 to 7, with a semicolon between adjacent words. The font of the English Abstract is Times New Roman, with the size of 12pt(small four).
+% The upper bound of the number of Chinese characters is 400. The abstract aims at introducing the research purpose，research methods，research results，and research conclusion of graduation thesis，with refining words. Generally speaking，both the Chinese and English abstracts require the keywords，the number of which varies from 3 to 7，with a semicolon between adjacent words. The font of the English Abstract is Times New Roman，with the size of 12pt(small four).
 % }
 
-% \ekeywords{keyword 1, keyword 2, keyword 3, ……, keyword 7 (no punctuation at the end)}
+% \ekeywords{keyword 1，keyword 2，keyword 3，……，keyword 7 (no punctuation at the end)}
 
 % \makecover
 
@@ -35,36 +35,44 @@
 % !Mode:: "TeX:UTF-8"
 
 
-\ctitle{基于贯口的传统相声研究}  %封面用论文标题，自己可手动断行
-\etitle{Research on traditional cross talk based on Guankou}
+\ctitle{高分子结晶的对称性及其破缺研究}  %封面用论文标题，自己可手动断行
+\etitle{Study on Symmetry and its Breaking in Polymer Crystallization}
 \cfirstsubjecttitle{\textbf{一级学科}}
-\cfirstsubject{\textbf{\underline{\makebox[14em][c]{信息与通信工程}}}}   %专业
+\cfirstsubject{\textbf{\underline{\makebox[14em][c]{材料与化工}}}}   %专业
 \csubjecttitle{\textbf{研究方向}}
-\csubject{\textbf{\underline{\makebox[14em][c]{信号与信息处理}}}}   %专业
+\csubject{\textbf{\underline{\makebox[14em][c]{高分子结晶}}}}   %专业
 \cauthortitle{\textbf{作者姓名}}     % 学位
-\cauthor{\textbf{\underline{\makebox[14em][c]{WH}}}}   %学生姓名
+\cauthor{\textbf{\underline{\makebox[14em][c]{}}}}   %学生姓名
 \csupervisortitle{\textbf{指导教师}}
-\csupervisor{\textbf{\underline{\makebox[14em][c]{LJ}}}} %导师姓名
+\csupervisor{\textbf{\underline{\makebox[14em][c]{}}}} %导师姓名
 
 \teachertable{
 \begin{table}[h]
 \centering
-\renewcommand{\arraystretch}{1}  % 临时定义一下行间距
-\song\xiaosi{
-\begin{tabularx}{\textwidth}{|*{4}{>{\centering\arraybackslash}X|}}
+\renewcommand{\arraystretch}{1}
+\song\xiaosi
+\setlength{\tabcolsep}{4pt} % 可选：减小列间距（默认 6pt）
+\begin{tabular}{
+    |>{\centering\arraybackslash}p{3.76cm}|
+    >{\centering\arraybackslash}p{2.68cm}|
+    >{\centering\arraybackslash}p{2.25cm}|
+    >{\centering\arraybackslash}p{\dimexpr\textwidth - 3.76cm - 2.68cm - 2.25cm - 5\arrayrulewidth - 2\tabcolsep\relax}|
+}
 \hline
-\textbf{答辩日期}                & \multicolumn{3}{c|}{20   年   月   日}       \\ \hline
-\textbf{答辩委员会}               & \textbf{姓名} & \textbf{职称} & \textbf{工作单位} \\ \hline
-\textbf{主席}                  &             &             &               \\ \hline
-\multirow{2}{*}{\textbf{委员}} &             &             &               \\ \cline{2-4} 
-                             &             &             &               \\ \hline
-\end{tabularx}}
+\textbf{\textbf{答辩日期}} & \multicolumn{3}{c|}{20\quad\, 年\quad\, 月\quad\, 日} \\ \hline
+\textbf{\textbf{答辩委员会}} & \textbf{姓名} & \textbf{职称} & \textbf{\textbf{工作单位}} \\ \hline
+\textbf{\textbf{主席}} & & & \\ \hline
+\multirow{4}{*}{\textbf{委员}} & & & \\ \cline{2-4}
+ & & & \\ \cline{2-4}
+ & & & \\ \cline{2-4}
+ & & & \\ \hline
+\end{tabular}
 \end{table}}
 
-\caffil{天津大学电气自动化与信息工程学院} %学院名称
+\caffil{天津大学材料科学与工程学院} %学院名称
 \cdate{\CJKdigits{\the\year} 年\CJKnumber{\the\month} 月 \CJKnumber{\the\day} 日}
 % 如需改成二〇一二年四月二十五日的格式，可以直接输入，即如下所示
-\cdate{二〇二一年九月}
+\cdate{二〇二五年十一月}
 % \cdate{\the\year 年\the\month 月 \the\day 日} % 此日期显示格式为阿拉伯数字 如2012年4月25日
 
 
@@ -83,20 +91,27 @@
 
 \cabstract{
 
-八扇屏是传统相声的一部分。八扇屏是传统相声的一部分。八扇屏是传统相声的一部分。八扇屏是传统相声的一部分。八扇屏是传统相声的一部分。
+高分子的长链结构决定着其结晶是一个多尺度复杂问题。高分子的建模通常基于位形空间的随机行走，将链缠结视为拓扑效应，不包括时间维的概念。然而，不同尺度的信息，如相结构、织构以及结晶率和力学性质等信息，都源于高分子的微观可逆动力学。近年来，实验研究发现高分子晶体熔融存在双模式松弛，则说明缠结应属于动力学自由度；长程取向的序参量 (long-range order) 的涌现，揭示了自发对称性破缺 (spontaneous symmetry breaking) 的存在。针对高分子晶体中缠结与长程序的耦合，本文从微观动力学及其对称性出发，构建了适用于高分子凝聚态的模型。主要研究结果如下：
 
-
+(一) 针对链缠结，首先修正局域扭结模型的扩散方程解，并通过 Neumann 边界条件下的一维 δ 排斥 Bose 气体模型 (Lieb-Liniger模型) 将缠结点量子化为轮廓上的准粒子；在二次量子化框架下构建其粒子数分布、平均缠结点密度及管长涨落的模型。与局域扭结模型相比，该模型保持能动量与粒子数的守恒性，但未包含链的运动，无法描述长程序。
+(二) 为描述缠结和长程序的耦合，进一步将自回避随机行走场论赋予时间维度，并拓展至有限温度，构造了自回避随机弦的有效场论。通过局域化 O($N$) 对称性，引入规范场描述缠结，将缠结作为一种几何效应；长程序对守恒量的要求使得 $N \to 0$ 极限失效, 理论的红外稳定性和局部有序态的可观测性要求 $N = 2$，此时理论等价于 Coleman-Weinberg 模型。
+(三) 引入晶体化学势 $\mu$ 驱动长程序的形成。对于耦合常数满足 $\lambda \ll g^2 \ll 1$，采用高温–长链近似，有效势包含非微扰环重求和带来的次阶修正，但不包含规范场真空图的对数修正，使得无序–有序相变由二级转变为具有潜热与势垒的一阶相变。依据该模型，凝聚过程在高温与小 $\mu$ 区域受抑制，潜热对应于 Gibbs-Thomson 方程中熔融与结晶外推温度的差值，而由 $g$ 主导的亚稳区上限温度，对应于结晶记忆效应中 I-IIa 区的分界温度。
 }
 
-\ckeywords{关键词，关键词，关键词，关键词，关键词}
+\ckeywords{高分子结晶，长程序，缠结，自发对称性破缺，Lieb-Liniger 模型，Coleman-Weinberg 模型}
 
 \eabstract{
 
-The eight screens are part of the traditional comic dialogue. The eight screens are part of the traditional comic dialogue. The eight screens are part of the traditional comic dialogue. The eight screens are part of the traditional comic dialogue. 
+The long chain structure of polymer makes the modeling of crystallization a profound multiscale problem, which is based on the random walk in configuration space and the chain entanglement regarded as topological effects, without the notion of a time dimension. Recnetly, the observation of the two-step decay in the melting relaxation of crystalline polymers suggests that entanglement should be treated as a dynamical degree of freedom, which becomes significant when the an emergent long-range order corresponds to the global orientation. The order parameter reveals the existence of spontaneous symmetry breaking. Considering the coupling between the entanglement and long-range order, a model for polymer condensed matter is developed in this work, which is based on the microscpic dynamics and the underlying systmetries. The main results are summarized as follows:
 
+(1) The solution of the diffusion equation in Local-Knot model is modifed, which is a statistical distribution for entanglements on the contour. Then, this model is promoted to the Lieb-Liniger model, where entanglements are quantized as quasi-particles with Neumann boundary condition. The model gives a conserved dynamics but without considering the chain's motion, where the long-range order can not be captured. 
+(2) For the coupling between the long-range order and entanglement, another field model based on self-avoiding walk is promoted with time dimension at finite temperature. The O($N$) symmetry of scalar is localized with the gauge d.o.f. for the entanglement, indicating the entanglement is geometrical in essence. The $N \to 0$ brought by replica trick is replaced by $N = 2$ as the results of the I.R. stability and the observation of a local order parameter. Hence, this theory is equivalent to the Coleman-Weinberg model.
+(3) In grand canonical ensemble, the chemical potential introduced is related to crystalline polymer, leading to spontaneous symmetry breaking. In the bulk, the self-repulsion gets screened while the gauge-scalar interaction dominates. The theory is still perturbative, i.e., $\lambda \ll g^2 \ll 1$. The effective potential is obtained, in which the long-chain and high-temperature approximations are applied. The next-leading order mordificaitons from ring resummaiton change the condensation of the order parameter from a second-order phase transition to a first-order one for large $\mu$ and $g^2 \ll 1$, with latent heat and metastable region. The ordering is suppressed at high temperature and small $\mu$. The variation of extrapolated temperature in Gibbs-Thomson equations are related to the latent heat of the first-order transition. Meanwhile, the temperature upper bound of the $g$-dominated metastable region corresponds to the boundary between regions I and IIa in the crystallization memory effect.
+
+% In addition, the topological terms only appears as particular boundary conditions, which means the topology for open chains is dynamical rather than configurable. This model provides a new perspective for condensed state of polymers by regarding chain ends and entanglements as particles.
 }
 
-\ekeywords{Keyword, Keyword, Keyword, Keyword, Keyword}
+\ekeywords{Polymer crystallization，Long-range order，Entanglement，Spontaneous symmetry breaking，Lieb-Liniger model，Coleman-Weinberg model}
 
 \makecover
 \clearpage
